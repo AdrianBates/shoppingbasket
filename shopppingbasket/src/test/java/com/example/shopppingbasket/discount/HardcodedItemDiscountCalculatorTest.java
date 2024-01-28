@@ -9,9 +9,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.example.shoppingbasket.order.OrderLine;
 
 @SpringBootTest
-public class ItemDiscountCalculatorTest {
+public class HardcodedItemDiscountCalculatorTest {
 
-	private ItemDiscountCalculator discountCalculator = new ItemDiscountCalculator();
+	private HardcodedItemDiscountCalculator discountCalculator = new HardcodedItemDiscountCalculator();
 	
 	@Test
 	public void test_calulateDiscount_noDiscount() {
