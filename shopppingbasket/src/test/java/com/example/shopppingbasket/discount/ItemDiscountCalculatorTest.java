@@ -1,14 +1,12 @@
 package com.example.shopppingbasket.discount;
 
+import static com.example.shoppingbasket.order.OrderLineBuilder.anOrderLine;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.example.shoppingbasket.order.OrderLine;
-import com.example.shoppingbasket.order.OrderLineBuilder;
-
-import static com.example.shoppingbasket.order.OrderLineBuilder.anOrderLine;
 
 @SpringBootTest
 public class ItemDiscountCalculatorTest {
