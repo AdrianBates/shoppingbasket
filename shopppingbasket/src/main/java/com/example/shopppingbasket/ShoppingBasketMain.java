@@ -9,9 +9,9 @@ import com.example.shopppingbasket.discount.ItemDiscountCalculator;
 
 @Component
 public class ShoppingBasketMain implements CommandLineRunner {
-	
+
 	private final ItemDiscountCalculator calculator;
-	
+
 	@Autowired
 	ShoppingBasketMain(ItemDiscountCalculator calculator) {
 		this.calculator = calculator;
@@ -23,8 +23,9 @@ public class ShoppingBasketMain implements CommandLineRunner {
 		orderLine.setItem("Hat");
 		orderLine.setQuantity(1);
 		orderLine.setUnitPrice(300);
-		
-		calculator.calculateDiscount(orderLine );
+
+		calculator.calculateDiscount(orderLine);
+
 		System.out.println("Total cost of order : " + orderLine.getTotalPrice());
 	}
 
