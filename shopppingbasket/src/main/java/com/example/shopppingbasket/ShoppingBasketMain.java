@@ -13,7 +13,7 @@ public class ShoppingBasketMain implements CommandLineRunner {
 	private final ItemDiscountCalculator calculator;
 
 	@Autowired
-	ShoppingBasketMain(ItemDiscountCalculator calculator) {
+	public ShoppingBasketMain(ItemDiscountCalculator calculator) {
 		this.calculator = calculator;
 	}
 
